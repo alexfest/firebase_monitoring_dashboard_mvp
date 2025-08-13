@@ -33,7 +33,7 @@ export default function Dashboard() {
 
   return (
     <main className="p-6 space-y-6 max-w-6xl mx-auto">
-      <h1 className="text-2xl font-semibold">Monitoring</h1>
+      <h1 className="text-2xl font-semibold">Monitoring Dashboard</h1>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card title="Online users" value={counters?.onlineUsers ?? 0} />
