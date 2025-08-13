@@ -14,7 +14,7 @@ if (!app) {
 export const listenRealtime = (cb: (data: any) => void) => {
   try {
     const db = getFirestore();
-    const ref = doc(db, 'metrics/realtime/counters');
+    const ref = doc(db, 'metrics/realtime');
     return onSnapshot(ref, (snap) => cb(snap.data()));
   } catch (e) {
     console.warn('Realtime listener error:', e);

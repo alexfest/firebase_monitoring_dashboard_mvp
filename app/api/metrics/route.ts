@@ -23,7 +23,7 @@ export async function GET() {
       };
     });
 
-    const realtimeRef = adminDb.doc('metrics/realtime/counters');
+    const realtimeRef = adminDb.doc('metrics/realtime');
     const realtimeDoc = await realtimeRef.get();
     const realtime = realtimeDoc.exists ? realtimeDoc.data() : {};
 
